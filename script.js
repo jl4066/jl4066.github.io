@@ -1,22 +1,3 @@
-/* --- Animations --- */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* --- Responsive --- */
-@media (max-width: 768px) {
-    #hero h1 { font-size: 2.5rem; }
-    .btn-group { flex-direction: column; }
-    .nav-links { gap: 10px; font-size: 0.9rem; }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     
     // --- 1. Fade-in Animation on Scroll ---
