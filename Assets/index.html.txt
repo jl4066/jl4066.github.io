@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob | Rutgers Tutor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">RU Tutor</h1>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hours">Hours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="fade-in">
+        <div class="hero-content">
+            <img src="./assets/ProfilePic.jpeg" alt="Jacob's Profile Picture" class="profile-pic">
+            <h1>Hi, I'm <span class="highlight">Jacob</span></h1>
+            <h2>Your Dedicated Rutgers Tutor</h2>
+            <p>Helping fellow Scarlet Knights excel in their coursework.</p>
+            <div class="btn-group">
+                <a href="./assets/resume.pdf" class="btn btn-outline" target="_blank">View My Resume</a>
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="bio">I am a passionate student at Rutgers University dedicated to making complex subjects easy to understand. Whether you need help prepping for a midterm or grasping a tough concept, I'm here to help you succeed.</p>
+            
+            <h3 class="subsection-title">Subjects I Tutor</h3>
+            <div class="subject-grid">
+                <div class="subject-card">
+                    <h4>Calculus 135/151</h4>
+                    <p>Limits, derivatives, integrals, and applications.</p>
+                </div>
+                <div class="subject-card">
+                    <h4>Data Structures</h4>
+                    <p>Arrays, linked lists, trees, graphs, and algorithms.</p>
+                </div>
+                <div class="subject-card">
+                    <h4>Intro to Chemistry</h4>
+                    <p>Stoichiometry, atomic structure, and thermodynamics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hours" class="bg-light fade-in">
+        <div class="container">
+            <h2>Available Hours</h2>
+            <p>I offer flexible tutoring sessions on and off-campus (e.g., Alexander Library or via Zoom).</p>
+            
+            <div class="hours-table-container">
+                <table class="hours-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>4:00 PM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Unavailable</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>2:00 PM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>4:00 PM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>12:00 PM - 4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Weekend</td>
+                            <td>By Request</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p>Ready to boost your grades? Send me a message and let's set up a session!</p>
+            
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Rutgers Email" required>
+                <textarea rows="5" placeholder="What class do you need help with?" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+/* --- Variables & Reset --- */
+:root {
+    --scarlet: #cc0033;
+    --black: #000000;
+    --dark-gray: #333333;
+    --light-gray: #f4f4f4;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+/* --- Navigation --- */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--scarlet);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: var(--scarlet);
+}
+
+/* --- Hero Section --- */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, var(--light-gray), var(--white));
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--scarlet);
+    box-shadow: 0 10px 20px rgba(204, 0, 51, 0.2);
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: var(--scarlet);
+}
+
+#hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+/* --- Buttons --- */
+.btn-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--scarlet);
+    color: var(--white);
+    border: 2px solid var(--scarlet);
+}
+
+.btn-primary:hover {
+    background-color: #a30029;
+    border-color: #a30029;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(204, 0, 51, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--scarlet);
+    border: 2px solid var(--scarlet);
+}
+
+.btn-outline:hover {
+    background-color: var(--scarlet);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* --- Sections --- */
+section {
+    padding: 100px 0;
+}
+
+.bg-light {
+    background-color: var(--light-gray);
+}
+
+/* --- About --- */
+.bio {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+}
+
+.subsection-title {
+    color: var(--scarlet);
+    margin-bottom: 20px;
+}
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.subject-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--scarlet);
+    transition: transform 0.3s;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+}
+
+/* --- Hours Table --- */
+.hours-table-container {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table th {
+    background-color: var(--scarlet);
+    color: var(--white);
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.hours-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.hours-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* --- Contact Form --- */
+.contact-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--scarlet);
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--scarlet);
+}
+
+/* --- Animations --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    #hero h1 { font-size: 2.5rem; }
+    .btn-group { flex-direction: column; }
+    .nav-links { gap: 10px; font-size: 0.9rem; }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- 1. Fade-in Animation on Scroll ---
+    const faders = document.querySelectorAll('.fade-in');
+    
+    const appearOptions = {
+        threshold: 0.2, 
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            } else {
+                entry.target.classList.add('appear');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+
+    // --- 2. Active Navbar Link Highlighting ---
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+});
