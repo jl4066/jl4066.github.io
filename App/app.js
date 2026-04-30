@@ -42,4 +42,3 @@ const sessionXpEl = document.getElementById("session-xp-earned");
 const reviewListEl = document.getElementById("review-list");
 
 /* ========================================== */
-/* 3
