@@ -1,0 +1,266 @@
+[
+  {
+    "item_id": "isc-001",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "Which cloud computing model delivers fully managed software applications over the internet on a subscription basis?",
+      "options": [
+        {"id": "A", "text": "Infrastructure as a Service (IaaS)", "is_correct": false, "explanation": "IaaS provides virtualized computing resources, not fully managed applications."},
+        {"id": "B", "text": "Platform as a Service (PaaS)", "is_correct": false, "explanation": "PaaS provides a framework for developers to build applications."},
+        {"id": "C", "text": "Software as a Service (SaaS)", "is_correct": true, "explanation": "SaaS delivers fully hosted, ready-to-use software applications over the internet."},
+        {"id": "D", "text": "Desktop as a Service (DaaS)", "is_correct": false, "explanation": "DaaS provides virtual desktop environments."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-002",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Application",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "An organization needs a disaster recovery site that is fully equipped with hardware and exact copies of data, capable of taking over processing within minutes. Which site should they utilize?",
+      "options": [
+        {"id": "A", "text": "Cold Site", "is_correct": false, "explanation": "A cold site has space and power but no hardware or immediate data."},
+        {"id": "B", "text": "Warm Site", "is_correct": false, "explanation": "A warm site has hardware but requires data restoration, taking hours or days."},
+        {"id": "C", "text": "Hot Site", "is_correct": true, "explanation": "A hot site is fully operational with synchronized data and can take over almost immediately."},
+        {"id": "D", "text": "Mobile Site", "is_correct": false, "explanation": "A mobile site is a portable facility, not a synchronized data center."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-003",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "In the Systems Development Life Cycle (SDLC), during which phase is user acceptance testing (UAT) typically performed?",
+      "options": [
+        {"id": "A", "text": "Requirements Definition", "is_correct": false, "explanation": "Requirements definition occurs before any coding or testing."},
+        {"id": "B", "text": "Development", "is_correct": false, "explanation": "Development involves writing the actual code."},
+        {"id": "C", "text": "Testing", "is_correct": true, "explanation": "UAT is the final part of the Testing phase before the system moves to implementation."},
+        {"id": "D", "text": "Maintenance", "is_correct": false, "explanation": "Maintenance occurs after the system is already live."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-004",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Application",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "Which of the following represents a failure in proper segregation of duties within IT change management?",
+      "options": [
+        {"id": "A", "text": "A developer writes code and an IT manager approves the deployment.", "is_correct": false, "explanation": "This is a proper segregation of duties."},
+        {"id": "B", "text": "A systems administrator deploys code that was tested by QA.", "is_correct": false, "explanation": "This is acceptable as long as the admin did not write the code."},
+        {"id": "C", "text": "A developer writes the code and moves it directly into the production environment.", "is_correct": true, "explanation": "Developers should never have access to deploy their own code into production."},
+        {"id": "D", "text": "A business user requests a change and performs User Acceptance Testing.", "is_correct": false, "explanation": "Business users requesting and testing changes is standard practice."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-005",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "What is the primary function of an Application Programming Interface (API)?",
+      "options": [
+        {"id": "A", "text": "To encrypt data resting in a database.", "is_correct": false, "explanation": "Encryption is handled by cryptographic algorithms, not APIs."},
+        {"id": "B", "text": "To allow two distinct software systems to communicate and share data.", "is_correct": true, "explanation": "APIs act as bridges that let different applications talk to one another."},
+        {"id": "C", "text": "To block unauthorized network traffic.", "is_correct": false, "explanation": "Blocking traffic is the function of a firewall."},
+        {"id": "D", "text": "To serve as the primary interface for human users.", "is_correct": false, "explanation": "Graphical User Interfaces (GUIs) are for humans; APIs are for software."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-006",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Application",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "An auditor notes that a company relies on a third-party software vendor for a critical application. Which of the following mitigates the risk of the vendor going out of business?",
+      "options": [
+        {"id": "A", "text": "Service Level Agreement (SLA)", "is_correct": false, "explanation": "SLAs mandate performance metrics but don't protect against bankruptcy."},
+        {"id": "B", "text": "Source Code Escrow Agreement", "is_correct": true, "explanation": "Escrow ensures the client receives the source code if the vendor ceases operations."},
+        {"id": "C", "text": "Non-Disclosure Agreement (NDA)", "is_correct": false, "explanation": "NDAs protect confidentiality, not business continuity."},
+        {"id": "D", "text": "Business Impact Analysis (BIA)", "is_correct": false, "explanation": "A BIA identifies risks but does not directly mitigate the loss of vendor code."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-007",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "What does Recovery Time Objective (RTO) define in business continuity planning?",
+      "options": [
+        {"id": "A", "text": "The maximum amount of data loss an organization can tolerate.", "is_correct": false, "explanation": "This describes the Recovery Point Objective (RPO)."},
+        {"id": "B", "text": "The maximum acceptable amount of time a system can be offline after a disaster.", "is_correct": true, "explanation": "RTO is the target time set for the resumption of operations after an incident."},
+        {"id": "C", "text": "The time it takes to perform a full system backup.", "is_correct": false, "explanation": "Backup duration is an operational metric, not RTO."},
+        {"id": "D", "text": "The exact time an outage occurred.", "is_correct": false, "explanation": "This is simply an incident timestamp."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-008",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "Which of the following is an example of an IT General Control (ITGC)?",
+      "options": [
+        {"id": "A", "text": "A three-way match configured in an accounts payable system.", "is_correct": false, "explanation": "A three-way match is an automated application control, not an ITGC."},
+        {"id": "B", "text": "A system setting that requires all passwords to be at least 12 characters long.", "is_correct": true, "explanation": "Logical access controls (like password policies) are foundational IT General Controls."},
+        {"id": "C", "text": "A mathematical validation check on a data entry form.", "is_correct": false, "explanation": "Input validation is an application-level control."},
+        {"id": "D", "text": "A mandatory review of a specific journal entry.", "is_correct": false, "explanation": "This is a manual business process control."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-009",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "Which technology allows multiple operating systems to run simultaneously on a single physical server?",
+      "options": [
+        {"id": "A", "text": "Containerization", "is_correct": false, "explanation": "Containerization isolates applications, but they share a single OS kernel."},
+        {"id": "B", "text": "Virtualization", "is_correct": true, "explanation": "Virtualization uses a hypervisor to run multiple isolated operating systems on one machine."},
+        {"id": "C", "text": "Load Balancing", "is_correct": false, "explanation": "Load balancing distributes network traffic across multiple servers."},
+        {"id": "D", "text": "Microservices", "is_correct": false, "explanation": "Microservices is an architectural style for developing applications."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-010",
+    "blueprint_area": "Area 1: Information Systems & IT Architecture",
+    "skill_level": "Application",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "An organization is implementing an Enterprise Resource Planning (ERP) system. What is the primary advantage of this architecture?",
+      "options": [
+        {"id": "A", "text": "It guarantees immunity from cybersecurity breaches.", "is_correct": false, "explanation": "No system is immune to cyber attacks."},
+        {"id": "B", "text": "It integrates disparate business functions into a single, centralized database.", "is_correct": true, "explanation": "ERPs eliminate data silos by combining finance, HR, and supply chain data into one system."},
+        {"id": "C", "text": "It eliminates the need for IT General Controls.", "is_correct": false, "explanation": "ERPs require strict ITGCs to function securely."},
+        {"id": "D", "text": "It relies exclusively on decentralized blockchain ledgers.", "is_correct": false, "explanation": "Traditional ERPs use centralized relational databases."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-011",
+    "blueprint_area": "Area 2: Data Management & Data Life Cycle",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "In the context of data management, what does the acronym ETL stand for?",
+      "options": [
+        {"id": "A", "text": "Encrypt, Transfer, Lock", "is_correct": false, "explanation": "This is a made-up security term."},
+        {"id": "B", "text": "Extract, Transform, Load", "is_correct": true, "explanation": "ETL is the process of pulling data, cleaning it, and loading it into a data warehouse."},
+        {"id": "C", "text": "External Threat Landscape", "is_correct": false, "explanation": "This refers to cybersecurity analysis."},
+        {"id": "D", "text": "Enterprise Technology Ledger", "is_correct": false, "explanation": "This is a fictitious term."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-012",
+    "blueprint_area": "Area 2: Data Management & Data Life Cycle",
+    "skill_level": "Application",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "In a relational database, what is the purpose of a foreign key?",
+      "options": [
+        {"id": "A", "text": "To encrypt external data connections.", "is_correct": false, "explanation": "Foreign keys are related to data architecture, not encryption."},
+        {"id": "B", "text": "To uniquely identify each record within a single table.", "is_correct": false, "explanation": "This is the definition of a Primary Key."},
+        {"id": "C", "text": "To establish a link between the data in two different tables.", "is_correct": true, "explanation": "A foreign key in one table points to a primary key in another to create a relationship."},
+        {"id": "D", "text": "To prevent unauthorized users from viewing the table.", "is_correct": false, "explanation": "This is handled by access controls, not foreign keys."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-013",
+    "blueprint_area": "Area 2: Data Management & Data Life Cycle",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "Which document acts as a centralized repository containing definitions, structures, and metadata about the data elements in a database?",
+      "options": [
+        {"id": "A", "text": "Data Dictionary", "is_correct": true, "explanation": "A data dictionary provides detailed information about data types, lengths, and relationships."},
+        {"id": "B", "text": "Service Level Agreement (SLA)", "is_correct": false, "explanation": "An SLA governs vendor performance."},
+        {"id": "C", "text": "System Architecture Diagram", "is_correct": false, "explanation": "This maps hardware and network paths, not metadata."},
+        {"id": "D", "text": "SOC 2 Report", "is_correct": false, "explanation": "A SOC 2 reports on controls, not database metadata."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-014",
+    "blueprint_area": "Area 2: Data Management & Data Life Cycle",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "Which of the following is considered unstructured data?",
+      "options": [
+        {"id": "A", "text": "An Excel spreadsheet of inventory counts.", "is_correct": false, "explanation": "Spreadsheets are highly structured."},
+        {"id": "B", "text": "A SQL database containing customer addresses.", "is_correct": false, "explanation": "Relational databases hold structured data."},
+        {"id": "C", "text": "A folder full of recorded customer service phone calls.", "is_correct": true, "explanation": "Audio, video, and free-form emails lack a predefined data model, making them unstructured."},
+        {"id": "D", "text": "A CSV file of daily transaction totals.", "is_correct": false, "explanation": "CSV files are structured formats."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-015",
+    "blueprint_area": "Area 2: Data Management & Data Life Cycle",
+    "skill_level": "Application",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "An organization moves historical transaction data that is rarely accessed from its primary production database to a cheaper, long-term storage facility. Which phase of the data life cycle does this represent?",
+      "options": [
+        {"id": "A", "text": "Data Creation", "is_correct": false, "explanation": "Creation is the initial generation of data."},
+        {"id": "B", "text": "Data Archival", "is_correct": true, "explanation": "Archiving involves moving inactive data to long-term storage for compliance or retention."},
+        {"id": "C", "text": "Data Destruction", "is_correct": false, "explanation": "Destruction implies permanently deleting the data."},
+        {"id": "D", "text": "Data Processing", "is_correct": false, "explanation": "Processing is the active manipulation of data."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-016",
+    "blueprint_area": "Area 2: Data Management & Data Life Cycle",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "What is a defining characteristic of a Data Lake compared to a Data Warehouse?",
+      "options": [
+        {"id": "A", "text": "A data lake stores massive amounts of raw, unstructured data.", "is_correct": true, "explanation": "Data lakes hold raw data in its native format, whereas data warehouses hold structured, transformed data."},
+        {"id": "B", "text": "A data lake only accepts strictly relational SQL tables.", "is_correct": false, "explanation": "Data lakes are designed for non-relational and unstructured data."},
+        {"id": "C", "text": "A data lake automatically deletes data after 30 days.", "is_correct": false, "explanation": "Data lakes are generally for long-term storage."},
+        {"id": "D", "text": "A data lake is only hosted on on-premise mainframes.", "is_correct": false, "explanation": "Data lakes are frequently hosted in the cloud (e.g., AWS S3)."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-017",
+    "blueprint_area": "Area 2: Data Management & Data Life Cycle",
+    "skill_level": "Remembering & Understanding",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "Which discipline focuses on creating a single, accurate, and authoritative point of reference for an organization's critical business data (e.g., standardizing 'Customer Name' across all systems)?",
+      "options": [
+        {"id": "A", "text": "Master Data Management (MDM)", "is_correct": true, "explanation": "MDM ensures uniformity and accuracy of critical shared data across the enterprise."},
+        {"id": "B", "text": "Change Management", "is_correct": false, "explanation": "Change management deals with software updates."},
+        {"id": "C", "text": "Encryption Key Management", "is_correct": false, "explanation": "This relates to cryptography."},
+        {"id": "D", "text": "Agile Development", "is_correct": false, "explanation": "Agile is a software development methodology."}
+      ]
+    }
+  },
+  {
+    "item_id": "isc-018",
+    "blueprint_area": "Area 2: Data Management & Data Life Cycle",
+    "skill_level": "Application",
+    "item_type": "mcq",
+    "content": {
+      "question_stem": "To ensure compliance with data governance policies, who is primarily responsible for classifying a set of data and determining who should have access to it?",
+      "options": [
+        {"id": "A", "text": "The IT Security Administrator", "is_correct": false, "explanation": "IT administrators implement the access controls, but do not determine the business rules."},
+        {"id
